@@ -1,6 +1,5 @@
 import './App.css';
 import {YMInitializer} from 'react-yandex-metrika';
-import ym from 'react-yandex-metrika';
 
 function App() {
   return (
