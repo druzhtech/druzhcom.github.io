@@ -13,17 +13,25 @@
   }
 }
 
+@font-face {
+  font-family: 'Russian';
+  src: local('Russian'), url(./fonts/ostrog.ttf) format('truetype');}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #231f1e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: Russian, serif;
+
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.red-letter {
+  color: #c39a3b;
+}
 .App-link {
   color: #61dafb;
 }
