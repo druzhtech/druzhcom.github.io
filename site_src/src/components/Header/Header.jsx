@@ -14,7 +14,6 @@ class Header extends Component {
                         <div className="col-lg-10 align-self-end">
                             <h1 className="text-white russian-h1">дружининъ</h1>
                             {/* <h2 className="text-white russian-h2">традиции <small> и </small> инновации</h2> */}
-                            <h3 className="text-white">@</h3>
 
                         </div>
                         <div className="col-lg-8 align-self-baseline">
