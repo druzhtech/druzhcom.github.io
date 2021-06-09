@@ -4,9 +4,9 @@ import '../App.css';
 class Services extends Component {
     render() {
         return (
-            <section className="page-section" id="services">
+            <section className="page-section" id="услуги">
             <div className="container">
-                <h2 className="text-center mt-0">At Your Service</h2>
+                <h2 className="text-center mt-0 russian">Услуги</h2>
                 <hr className="divider my-4"/>
                 <div className="row">
                     <div className="col-lg-3 col-md-6 text-center">

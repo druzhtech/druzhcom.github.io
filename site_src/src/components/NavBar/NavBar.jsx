@@ -10,8 +10,7 @@ class NavBar extends Component {
             <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
                 <div className="container">
                     {/* <p className="navbar-brand js-scroll-trigger russian" href="#p">Дружининъ <small>исследования и разработка</small></p> */}
-                    <p className="russian navbar-brand-russian js-scroll-trigger" href="#p">дружининъ
-                    {/* <small>исследования и разработка</small> */}
+                    <p className="russian navbar-brand-russian js-scroll-trigger" href="#p">дружининъ: для своего народа<small></small>
                     </p>
 
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -20,24 +19,32 @@ class NavBar extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
-                        <ul className="navbar-nav ml-auto my-2 my-lg-0">
-                            {/* <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="https://github.com/didexorg">Github</a>
+                        {/* <ul className="navbar-nav ml-auto my-2 my-lg-0">
+
+                            <li className="nav-item">
+                                <a className="nav-link js-scroll-trigger" href="#затеи">Затеи</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                                <a className="nav-link js-scroll-trigger" href="#услуги">Услуги</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#services">Services</a>
+                                <a className="nav-link js-scroll-trigger" href="#связь">Связь</a>
+                            </li>
+                        </ul> */}
+
+                        {/* <ul className="navbar-nav my-2 my-lg-0 brd" style={{ marginLeft: "5%" }}>
+
+                            <li className="nav-item">
+                                <a className="nav-link js-scroll-trigger" href="#">Карта</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#token">Token</a>
+                                <a className="nav-link js-scroll-trigger" href="#">Словарь</a>
                             </li>
-  
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                            </li> */}
-                        </ul>
+                                <a className="nav-link js-scroll-trigger" href="#">Магазин</a>
+                            </li>
+                        </ul> */}
+
                     </div>
                 </div>
             </nav>

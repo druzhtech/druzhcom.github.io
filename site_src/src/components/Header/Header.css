@@ -5,6 +5,11 @@
 
 @font-face {
   font-family: 'Russian-2';
+  src: local('Russian'), url(../../data/fonts/monomah2.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Russian-3';
   src: local('Russian'), url(../../data/fonts/pisar.otf) format('truetype');
 }
 
@@ -13,16 +18,24 @@ p:first-letter {
     font-size: 200%;
 }
 
-h1:first-letter {
-  color: #c39a3b; /* Красный цвет первой буквы */
+/* h1:first-letter {
+  color: #c39a3b;
   font-size: 200%;
-}
+} */
 
-.russian-h1 {
+.russian-h1-1 {
     font-family: Russian-1, serif;
 }
 
-.russian-h2 {
+.russian-h1-2 {
+  font-family: Russian-2, serif;
+}
+
+.russian-h2-1 {
+  font-family: Russian-1, serif;
+}
+
+.russian-h2-2 {
   font-family: Russian-2, serif;
 }
 

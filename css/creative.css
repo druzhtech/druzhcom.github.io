@@ -10632,7 +10632,7 @@ hr.light {
   #mainNav {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: transparent;
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);

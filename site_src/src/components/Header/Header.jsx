@@ -12,8 +12,8 @@ class Header extends Component {
                 <div className="container h-100">
                     <div className="row h-100 align-items-center justify-content-center text-center">
                         <div className="col-lg-10 align-self-end">
-                            <h1 className="text-white russian-h1">дружининъ</h1>
-                            {/* <h2 className="text-white russian-h2">традиции <small> и </small> инновации</h2> */}
+                            <h1 className="text-white russian-h1-2">Экосистема</h1>
+                            <h2 className="text-white russian-h2-2">русских</h2>
 
                         </div>
                         <div className="col-lg-8 align-self-baseline">

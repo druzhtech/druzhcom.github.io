@@ -6,16 +6,18 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import './Footer.css';
 
 // TODO: like OnGrid
 
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://didex.org/">
-                Didex.org
-        </Link>{' '}
+            {/* {'права защищены © '} */}
+            {/* <span className="russian-footer">Права защищены</span> {' © '} */}
+            <Link color="inherit" href="https://druzh.com/">
+                <span className="russian-footer"><span style={{ fontSize: "200%", color: "#c39a3b" }}>Д</span>ружининъ</span> <br />
+            </Link>{' '}
             {new Date().getFullYear()}
             {''}
         </Typography>

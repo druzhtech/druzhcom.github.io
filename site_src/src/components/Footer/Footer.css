@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Russian-footer';
+    src: local('Russian-footer'), url(../../data/fonts/pisar.otf) format('truetype');
+  }
+
+span:first-letter {
+    color: #c39a3b; /* Красный цвет первой буквы */
+    font-size: 200%;
+}
+
+.russian-footer {
+    font-family: Russian-footer, serif;
+    font-weight: 700;
+    font-size: medium;
+    color: #231f1e;
+}
+

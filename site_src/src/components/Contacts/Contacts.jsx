@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Contacts extends Component {
     render() {
         return (
-            <section className="page-section" id="contact">
+            <section className="page-section" id="связь">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8 text-center">
-                            <h2 className="mt-0">Contacts</h2>
+                            <h2 className="mt-0">Связь</h2>
                             <hr className="divider my-4" />
                             {/* <p className="text-muted mb-5">Ready to start your next project with us? Give us a call
                                     or send us an email and we will get back to you as soon as possible!</p> */}

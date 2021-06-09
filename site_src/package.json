@@ -43,7 +43,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "rm -rf ../css ../img ../js ../scss ../static ../vendor && mv -f build/** ..",
+    "postbuild": "rm -rf ../css ../img ../js ../scss ../static ../vendor && cp -R build/** ..",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
