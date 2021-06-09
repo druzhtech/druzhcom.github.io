@@ -67,3 +67,5 @@ package-lock.json
 
 # IDEA
 .idea
+
+/build
