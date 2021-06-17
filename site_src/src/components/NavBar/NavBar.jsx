@@ -10,7 +10,7 @@ class NavBar extends Component {
             <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
                 <div className="container">
                     {/* <p className="navbar-brand js-scroll-trigger russian" href="#p">Дружининъ <small>исследования и разработка</small></p> */}
-                    <p className="russian navbar-brand-russian js-scroll-trigger" href="#p">дружининъ: для своего народа<small></small>
+                    <p className="russian navbar-brand-russian js-scroll-trigger" href="#p">дружининъ<small></small>
                     </p>
 
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
