@@ -12,7 +12,7 @@ class Footer extends Component {
             >
 
                 <div className="row">
-                    <div className="col">
+                    {/* <div className="col">
                         <div>
                             <a href="https://fb.me/didexorg">
                                 <i className="fab fa-facebook fa-3x text-muted"></i>
@@ -36,21 +36,11 @@ class Footer extends Component {
                             <i className="fab fa-medium fa-3x mb-3 text-muted"></i>
                         </a></div>
                     </div>
-                    {/* <div className="col">
-                        <div><a href="#">
-                            <i className="fab fa-reddit fa-3x mb-3 text-muted"></i>
-                        </a></div>
-                    </div>
-                    <div className="col">
-                        <div><a href="#">
-                            <i className="fab fa-linkedin fa-3x mb-3 text-muted"></i>
-                        </a></div>
-                    </div> */}
                     <div className="col">
                         <div><a href="https://t.me/DidexRu">
                             <i className="fab fa-telegram fa-3x mb-3 text-muted"></i>
                         </a></div>
-                    </div>
+                    </div> */}
 
                 </div>
 
