@@ -19,23 +19,24 @@ class NavBar extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
-                        {/* <ul className="navbar-nav ml-auto my-2 my-lg-0">
+                        <ul className="navbar-nav ml-auto my-2 my-lg-0">
 
-                            <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#затеи">Затеи</a>
-                            </li>
                             <li className="nav-item">
                                 <a className="nav-link js-scroll-trigger" href="#услуги">Услуги</a>
                             </li>
+
+                            {/* <li className="nav-item">
+                                <a className="nav-link js-scroll-trigger" href="#затеи">Затеи</a>
+                            </li>
+                            
                             <li className="nav-item">
                                 <a className="nav-link js-scroll-trigger" href="#связь">Связь</a>
                             </li>
-                        </ul> */}
-
-                        {/* <ul className="navbar-nav my-2 my-lg-0 brd" style={{ marginLeft: "5%" }}>
-
                             <li className="nav-item">
                                 <a className="nav-link js-scroll-trigger" href="#">Карта</a>
+                            </li>
+                             <li className="nav-item">
+                                <a className="nav-link js-scroll-trigger" href="#календарь">Календарь</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link js-scroll-trigger" href="#">Словарь</a>
@@ -43,7 +44,13 @@ class NavBar extends Component {
                             <li className="nav-item">
                                 <a className="nav-link js-scroll-trigger" href="#">Магазин</a>
                             </li>
-                        </ul> */}
+                            <li className="nav-item">
+                                <a className="nav-link js-scroll-trigger" href="#">Переезд</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link js-scroll-trigger" href="#">Личный кабинет</a>
+                            </li> */}
+                        </ul>
 
                     </div>
                 </div>

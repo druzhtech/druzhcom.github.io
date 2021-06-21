@@ -62,28 +62,11 @@ class ShortAbout extends Component {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8 text-center">
-                            <h2 className="text-white mt-0">We've got what you need!</h2>
+                            <h2 className="mt-0">Об экосистеме</h2>
                             <hr className="divider light my-4" />
-                            <p className="text-white-50 mb-4">
-                                {/* Description about company and technologies. Like: Bitcoin, Substrate, etc */}
-
-                                {/* <div className="row">
-
-                                    {
-                                        logoNames.map((logo) => this.renderSvgIcon(logo.title, logo.name))
-                                    }
-
-                                </div>
-
-                                <div className="row">
-
-                                    {
-                                        logoNames.map((logo) => this.renderPngIcon(logo.title, logo.name))
-                                    }
-
-                                </div> */}
-                            </p>
-                            <a className="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+                            Что такое Экосистема? Экосистема это разнообразный набор услуг под одной крышей, которые предоставляет одна организация. В России развивается несколько экосистем. В основном они предназначены для массового использования, удержании клиентов и максимизации дохода организации. Но в нашем понимании, экосистема должна служить непосредственно интересам своих участников, как получателей благ, так и производителей.
+                            <hr />
+                            <span>Дружининъ</span> - это тоже экосистема, но для определенной группы людей. Наше основное приемущество - тонкая настройка услуг за счёт более индивидуального подхода к каждому участнику экосистемы Дружининъ.
                         </div>
                     </div>
                 </div>

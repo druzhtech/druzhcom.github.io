@@ -1,28 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import './Footer.css';
 
 // TODO: like OnGrid
-
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {/* {'права защищены © '} */}
-            {/* <span className="russian-footer">Права защищены</span> {' © '} */}
-            <Link color="inherit" href="https://druzh.com/">
-                <span className="russian-footer"><span style={{ fontSize: "200%", color: "#c39a3b" }}>Д</span>ружининъ</span> <br />
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {''}
-        </Typography>
-    );
-}
 
 class Footer extends Component {
     render() {
@@ -30,10 +10,55 @@ class Footer extends Component {
             <footer
                 className="bg-light py-5"
             >
-                {/* <div className="container">
-                    <div className="small text-center text-muted">Copyright &copy; 2019 - Didex</div>
-                </div> */}
-                <Copyright />
+
+                <div className="row">
+                    <div className="col">
+                        <div>
+                            <a href="https://fb.me/didexorg">
+                                <i className="fab fa-facebook fa-3x text-muted"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div>
+                            <a href="https://twitter.com/didexorg">
+                                <i className="fab fa-twitter fa-3x text-muted"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div><a href="https://github.com/didexorg">
+                            <i className="fab fa-github fa-3x mb-3 text-muted"></i>
+                        </a></div>
+                    </div>
+                    <div className="col">
+                        <div><a href="https://medium.com/@didex">
+                            <i className="fab fa-medium fa-3x mb-3 text-muted"></i>
+                        </a></div>
+                    </div>
+                    {/* <div className="col">
+                        <div><a href="#">
+                            <i className="fab fa-reddit fa-3x mb-3 text-muted"></i>
+                        </a></div>
+                    </div>
+                    <div className="col">
+                        <div><a href="#">
+                            <i className="fab fa-linkedin fa-3x mb-3 text-muted"></i>
+                        </a></div>
+                    </div> */}
+                    <div className="col">
+                        <div><a href="https://t.me/DidexRu">
+                            <i className="fab fa-telegram fa-3x mb-3 text-muted"></i>
+                        </a></div>
+                    </div>
+
+                </div>
+
+                <div className="container">
+                    <div className="small text-center text-muted">Права защищены &copy; Дружининъ</div>
+                    <div className="small text-center text-muted">Телефон: +7 (925) 232-55-24</div>
+                </div>
+
             </footer>
         )
     }

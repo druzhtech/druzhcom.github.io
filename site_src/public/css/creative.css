@@ -601,8 +601,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  /* margin-right: -15px;
+  margin-left: -15px; */
 }
 
 .no-gutters {
@@ -10373,7 +10373,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #f4623a !important;
+  color: #ff0000 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10595,7 +10595,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 #mainNav {

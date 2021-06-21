@@ -6,7 +6,6 @@ import ShortAbout from '../ShortAbout/ShortAbout';
 import Services from '../Services/Services';
 import Projects from '../Projects/Projects';
 import TokenInfo from '../TokenInfo/TokenInfo';
-import Contacts from '../Contacts/Contacts';
 import Footer from '../Footer/Footer';
 
 class MainPage extends Component {
@@ -16,13 +15,11 @@ class MainPage extends Component {
 
                 <NavBar />
                 <Header />
-                {/* <Projects /> */}
                 {/* <ShortAbout /> */}
-                {/* <Services /> */}
+                {/* <Projects /> */}
+                <Services />
                 {/* <TokenInfo /> */}
-                {/* <Contacts /> */}
                 <Footer />
-
             </div>
         )
     }

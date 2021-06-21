@@ -11,10 +11,11 @@ library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
   return (
-    <div className="App">
+    <div 
+    // className="App"
+    >
       <MainPage />
       <YMInitializer accounts={[72383356]} options={{ webvisor: true }} />
-
     </div>
   );
 }
