@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Russian';
-    src: local('Russian'), url(../../assets//fonts/monomah1.ttf) format('truetype');
+    src: local('Russian'), url(../../assets/fonts/monomah1.ttf) format('truetype');
   }
 
 #p:first-letter {
