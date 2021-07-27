@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Russian';
+    src: local('Russian'), url(../../data/fonts/monomah1.ttf) format('truetype');
+  }
+
+p:first-letter {
+    color: #c39a3b; /* Красный цвет первой буквы */
+    font-size: 200%;
+}
+
+.russian {
+    font-family: Russian, serif;
+}
+
+.brd {
+  border: 4px double #c39a3b; /* Параметры границы */
+  padding: 20px; /* Поля вокруг текста */
+  border-radius: 10px;
+ }
+
+.navbar-brand-russian {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  
+  .navbar-brand-russian:hover, .navbar-brand-russian:focus {
+    text-decoration: none;
+  }
+
+  #mainNav .navbar-brand-russian {
+    /* font-family: "Russian", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700; */
+    color: white;
+  }
