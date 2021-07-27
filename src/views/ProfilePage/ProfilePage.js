@@ -17,18 +17,18 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/faces/christian.jpg";
+// import profile from "assets/img/faces/christian.jpg";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+// import studio1 from "assets/img/examples/studio-1.jpg";
+// import studio2 from "assets/img/examples/studio-2.jpg";
+// import studio3 from "assets/img/examples/studio-3.jpg";
+// import studio4 from "assets/img/examples/studio-4.jpg";
+// import studio5 from "assets/img/examples/studio-5.jpg";
+// import work1 from "assets/img/examples/olu-eletu.jpg";
+// import work2 from "assets/img/examples/clem-onojeghuo.jpg";
+// import work3 from "assets/img/examples/cynthia-del-rio.jpg";
+// import work4 from "assets/img/examples/mariya-georgieva.jpg";
+// import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
@@ -68,7 +68,7 @@ export default function ProfilePage(props) {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
-                    <img src={profile} alt="..." className={imageClasses} />
+                    <img src="" alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Christian Louboutin</h3>
@@ -108,24 +108,24 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={studio1}
+                              // src={studio1}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={studio2}
+                              // src={studio2}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={studio5}
+                              // src={studio5}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={studio4}
+                              // src={studio4}
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -140,29 +140,29 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work1}
+                              // src={work1}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work2}
+                              // src={work2}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work3}
+                              // src={work3}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work4}
+                              // src={work4}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work5}
+                              // src={work5}
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -177,29 +177,29 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work4}
+                              // src={work4}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={studio3}
+                              // src={studio3}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src={work2}
+                              // src={work2}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={work1}
+                              // src={work1}
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src={studio1}
+                              // src={studio1}
                               className={navImageClasses}
                             />
                           </GridItem>

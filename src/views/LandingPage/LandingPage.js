@@ -5,6 +5,9 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
+// import List from "@material-ui/core/List";
+// import ListItem from "@material-ui/core/ListItem";
+// import Tooltip from "@material-ui/core/Tooltip";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -23,6 +26,7 @@ import TeamSection from "./Sections/TeamSection.js";
 // import WorkSection from "./Sections/WorkSection.js";
 
 import "./LandingPage.css";
+import TechIcons from "components/TechIcons/TechIcons.js";
 
 const dashboardRoutes = [];
 
@@ -54,7 +58,7 @@ export default function LandingPage(props) {
         {...rest}
       />
 
-      <Parallax filter image={require("assets/img/profile-bg.jpg").default}>
+      <Parallax filter image={require("assets/img/landing-bg.jpg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -65,16 +69,7 @@ export default function LandingPage(props) {
                 для любых блокчейн платформ.
               </h4>
               <br />
-              {/* <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button> */}
+              <TechIcons />
             </GridItem>
           </GridContainer>
         </div>
