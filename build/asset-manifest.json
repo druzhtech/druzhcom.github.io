@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8fa470e8.chunk.css",
+    "main.js": "/static/js/main.686d3bc8.chunk.js",
+    "main.js.map": "/static/js/main.686d3bc8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2b975733.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2b975733.js.map",
+    "static/js/2.0eb05b22.chunk.js": "/static/js/2.0eb05b22.chunk.js",
+    "static/js/2.0eb05b22.chunk.js.map": "/static/js/2.0eb05b22.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8fa470e8.chunk.css.map": "/static/css/main.8fa470e8.chunk.css.map",
+    "static/js/2.0eb05b22.chunk.js.LICENSE.txt": "/static/js/2.0eb05b22.chunk.js.LICENSE.txt",
+    "static/media/bg7.32c7eec6.jpg": "/static/media/bg7.32c7eec6.jpg",
+    "static/media/christian.36a49d2f.jpg": "/static/media/christian.36a49d2f.jpg",
+    "static/media/clem-onojegaw.8809fc53.jpg": "/static/media/clem-onojegaw.8809fc53.jpg",
+    "static/media/clem-onojeghuo.862a0952.jpg": "/static/media/clem-onojeghuo.862a0952.jpg",
+    "static/media/cynthia-del-rio.43673965.jpg": "/static/media/cynthia-del-rio.43673965.jpg",
+    "static/media/ilyadruzh.b4b5a8ad.jpg": "/static/media/ilyadruzh.b4b5a8ad.jpg",
+    "static/media/mariya-georgieva.0817f394.jpg": "/static/media/mariya-georgieva.0817f394.jpg",
+    "static/media/LandingPage.css": "/static/media/monomah1.ad67824e.ttf",
+    "static/media/olu-eletu.429cd6ef.jpg": "/static/media/olu-eletu.429cd6ef.jpg",
+    "static/media/profile-bg.jpg": "/static/media/profile-bg.8129069f.jpg",
+    "static/media/studio-1.56c6121d.jpg": "/static/media/studio-1.56c6121d.jpg",
+    "static/media/studio-2.6fe3aba0.jpg": "/static/media/studio-2.6fe3aba0.jpg",
+    "static/media/studio-3.cb63e16b.jpg": "/static/media/studio-3.cb63e16b.jpg",
+    "static/media/studio-4.4c272c46.jpg": "/static/media/studio-4.4c272c46.jpg",
+    "static/media/studio-5.6b052d75.jpg": "/static/media/studio-5.6b052d75.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b975733.js",
+    "static/js/2.0eb05b22.chunk.js",
+    "static/css/main.8fa470e8.chunk.css",
+    "static/js/main.686d3bc8.chunk.js"
+  ]
+}
