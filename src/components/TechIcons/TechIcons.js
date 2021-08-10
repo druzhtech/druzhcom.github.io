@@ -1,21 +1,11 @@
-/*eslint-disable*/
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
-// react components for routing our app without refresh
-import { Link } from "react-router-dom";
 
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
-import CardMedia from '@material-ui/core/CardMedia';
-// @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/techIcons.js";
@@ -29,22 +19,18 @@ import ELIXIR from "assets/img/blockchains/elixir.png";
 import BTC from "assets/img/blockchains/BTC.png";
 import BNB from "assets/img/blockchains/BNB.png";
 
-
-
 const useStyles = makeStyles(styles);
 
-export default function TechIcons(props) {
+export default function TechIcons() {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}
-      >
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title=""
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
-
         >
           <Button
             href=""
@@ -52,10 +38,17 @@ export default function TechIcons(props) {
             color="transparent"
             variant="outlined"
             className={classes.navLink}
-            // style={{ borderRadius: "50% !important" }}
           >
-            <img src={ETH} alt="..." className={classes.socialIcons} style={{ width: "50px", backgroundColor: "#ffffff", borderRadius: "50%" }} />
-
+            <img
+              src={ETH}
+              alt="..."
+              className={classes.socialIcons}
+              style={{
+                width: "50px",
+                backgroundColor: "#ffffff",
+                borderRadius: "50%",
+              }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -73,8 +66,16 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={SUBSTRATE} alt="..." className={classes.socialIcons} style={{ width: "50px", backgroundColor: "#ffffff", borderRadius: "50%"  }} />
-
+            <img
+              src={SUBSTRATE}
+              alt="..."
+              className={classes.socialIcons}
+              style={{
+                width: "50px",
+                backgroundColor: "#ffffff",
+                borderRadius: "50%",
+              }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -92,8 +93,12 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={WASM} alt="..." className={classes.socialIcons} style={{ width: "50px" }} />
-
+            <img
+              src={WASM}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -111,8 +116,16 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={RUST} alt="..." className={classes.socialIcons} style={{ width: "50px", backgroundColor: "#ffffff", borderRadius: "50%"  }} />
-
+            <img
+              src={RUST}
+              alt="..."
+              className={classes.socialIcons}
+              style={{
+                width: "50px",
+                backgroundColor: "#ffffff",
+                borderRadius: "50%",
+              }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -130,8 +143,12 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={REACT} alt="..." className={classes.socialIcons} style={{ width: "50px"  }} />
-
+            <img
+              src={REACT}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -149,8 +166,16 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={ELIXIR} alt="..." className={classes.socialIcons} style={{ width: "50px", backgroundColor: "#ffffff", borderRadius: "50%"  }} />
-
+            <img
+              src={ELIXIR}
+              alt="..."
+              className={classes.socialIcons}
+              style={{
+                width: "50px",
+                backgroundColor: "#ffffff",
+                borderRadius: "50%",
+              }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -168,8 +193,12 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={BNB} alt="..." className={classes.socialIcons} style={{ width: "50px" }} />
-
+            <img
+              src={BNB}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
@@ -187,13 +216,15 @@ export default function TechIcons(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <img src={BTC} alt="..." className={classes.socialIcons} style={{ width: "50px" }} />
-
+            <img
+              src={BTC}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
           </Button>
         </Tooltip>
       </ListItem>
-
-
     </List>
   );
 }

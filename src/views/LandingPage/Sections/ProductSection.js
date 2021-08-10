@@ -1,31 +1,37 @@
-import React from "react";
-// @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { PropTypes } from "prop-types";
+import { Translate } from "react-redux-i18n";
 
-// @material-ui/icons
+import { makeStyles } from "@material-ui/core/styles";
 import Chat from "@material-ui/icons/Chat";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Code from "@material-ui/icons/Code";
-// core components
+import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+import { getDir } from "../../../redux/selectors/i18n";
 
 const useStyles = makeStyles(styles);
 
-export default function ProductSection() {
+function ProductSection(props) {
+  useEffect(() => {
+    document.dir = props.dir;
+  }, [props.dir]);
+
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Наша специализация</h2>
+          <h2 className={classes.title}>
+            <Translate value="specTitle" />
+          </h2>
           <h5 className={classes.description}>
-            Основной фокус нашей работы сосредоточен в блокчейн разработке. Для
-            реализации проектов используем современный набор технологий: Web3,
-            Solidity, React, Python, Rust
+            <Translate value="specDesc" />
           </h5>
         </GridItem>
       </GridContainer>
@@ -33,8 +39,8 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Консультации"
-              description="Блокчейн, криптоэкономика, биржи, смарт-контракты, маркетинг, dapp, стейкинг"
+              title={<Translate value="specConsultTitle" />}
+              description={<Translate value="specConsultDesc" />}
               icon={Chat}
               iconColor="info"
               vertical
@@ -42,8 +48,8 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Аудит"
-              description="Проведем исследования безопаности и эффективности сторонних смарт-контрактов и Dapp"
+              title={<Translate value="specAuditTitle" />}
+              description={<Translate value="specAuditDesc" />}
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -51,8 +57,8 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Разработка"
-              description="Смарт-контрактов и Dapp. Любой сложности на любом блокчейне."
+              title={<Translate value="specDevelopTitle" />}
+              description={<Translate value="specDevelopDesc" />}
               icon={Code}
               iconColor="danger"
               vertical
@@ -63,3 +69,10 @@ export default function ProductSection() {
     </div>
   );
 }
+
+ProductSection.propTypes = {
+  dir: PropTypes.string.isRequired,
+};
+
+const mapStateToProps = (state) => ({ dir: getDir(state) });
+export default connect(mapStateToProps)(ProductSection);

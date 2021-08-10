@@ -1,20 +1,19 @@
-import React from "react";
-// nodejs library that concatenates classes
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { PropTypes } from "prop-types";
+import { Translate } from "react-redux-i18n";
 import classNames from "classnames";
-// @material-ui/core components
+
 import { makeStyles } from "@material-ui/core/styles";
+import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-// @material-ui/icons
-
-// core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 // import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
-
-import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
+import { getDir } from "../../../redux/selectors/i18n";
 
 import team1 from "assets/img/faces/ilyadruzh.jpg";
 // import team2 from "assets/img/faces/christian.jpg";
@@ -22,13 +21,18 @@ import team1 from "assets/img/faces/ilyadruzh.jpg";
 
 const useStyles = makeStyles(styles);
 
-export default function TeamSection() {
+function TeamSection(props) {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+
+  useEffect(() => {
+    document.dir = props.dir;
+  }, [props.dir]);
+
   return (
     <div className={classes.section}>
       {/* <h2 className={classes.title}>Сотрудники</h2> */}
@@ -84,16 +88,16 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Илья Дружинин
+                <Translate value="ceoName" />
+
                 <br />
                 <small className={classes.smallTitle}>
-                  Инженер-исследователь
+                  <Translate value="ceoTitle" />
                 </small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Более 7 лет в исследованиях и разработке IT и web проектов. В
-                  блокчейн индустрии с 2016 года.
+                  <Translate value="ceoDesc" />
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -163,3 +167,10 @@ export default function TeamSection() {
     </div>
   );
 }
+
+TeamSection.propTypes = {
+  dir: PropTypes.string.isRequired,
+};
+
+const mapStateToProps = (state) => ({ dir: getDir(state) });
+export default connect(mapStateToProps)(TeamSection);

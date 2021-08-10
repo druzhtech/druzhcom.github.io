@@ -1,39 +1,36 @@
-import React from "react";
-// nodejs library that concatenates classes
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { getDir } from "../../redux/selectors/i18n";
+import { Translate } from "react-redux-i18n";
+import { PropTypes } from "prop-types";
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-// import List from "@material-ui/core/List";
-// import ListItem from "@material-ui/core/ListItem";
-// import Tooltip from "@material-ui/core/Tooltip";
-
-// core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-// import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
+import TechIcons from "components/TechIcons/TechIcons.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPage.js";
-
-// Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 // import WorkSection from "./Sections/WorkSection.js";
 
+import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import "./LandingPage.css";
-import TechIcons from "components/TechIcons/TechIcons.js";
 
 const dashboardRoutes = [];
-
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+function LandingPage(props) {
   const classes = useStyles();
+
+  useEffect(() => {
+    document.dir = props.dir;
+  }, [props.dir]);
+
   const { ...rest } = props;
   return (
     <div>
@@ -62,11 +59,11 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}>Экосистема Web3 услуг</h2>
+              <h2 className={classes.title}>
+                <Translate value="title" />
+              </h2>
               <h4>
-                Надежный партнер по разработке и сопровождению Web3 проектов.
-                Занимаемся аудитом и разработкой смарт-контрактов. Создаём Dapp
-                для любых блокчейн платформ.
+                <Translate value="description" />
               </h4>
               <br />
               <TechIcons />
@@ -85,3 +82,10 @@ export default function LandingPage(props) {
     </div>
   );
 }
+
+LandingPage.propTypes = {
+  dir: PropTypes.string.isRequired,
+};
+
+const mapStateToProps = (state) => ({ dir: getDir(state) });
+export default connect(mapStateToProps)(LandingPage);

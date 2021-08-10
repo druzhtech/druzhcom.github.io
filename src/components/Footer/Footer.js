@@ -1,21 +1,18 @@
-/*eslint-disable*/
-import React from "react";
-// nodejs library to set properties for components
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// material-ui core components
+import { connect } from "react-redux";
+import { Translate } from "react-redux-i18n";
+
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
+
+import { getDir } from "../../redux/selectors/i18n";
 
 const useStyles = makeStyles(styles);
 
-export default function Footer(props) {
+function Footer(props) {
   const classes = useStyles();
   const { whiteFont } = props;
   const footerClasses = classNames({
@@ -26,16 +23,22 @@ export default function Footer(props) {
     [classes.a]: true,
     [classes.footerWhiteFont]: whiteFont,
   });
+
+  useEffect(() => {
+    document.dir = props.dir;
+  }, [props.dir]);
+
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-             <ListItem className={classes.inlineBlock}>
+            <ListItem className={classes.inlineBlock}>
               <a
                 href="mailto:druzhcom@yandex.ru"
                 className={classes.block}
                 target="_blank"
+                rel="noreferrer"
               >
                 druzhcom@yandex.ru
               </a>
@@ -45,17 +48,19 @@ export default function Footer(props) {
                 href="tel:+79252325524"
                 className={classes.block}
                 target="_blank"
+                rel="noreferrer"
               >
                 +7 925 232-55-24
               </a>
             </ListItem>
-           <ListItem className={classes.inlineBlock}>
+            <ListItem className={classes.inlineBlock}>
               <a
                 href="tg://resolve?domain=ilyadruzh"
                 className={classes.block}
                 target="_blank"
+                rel="noreferrer"
               >
-                Написать в Telegram
+                <Translate value="sendByTelegram" />
               </a>
             </ListItem>
             {/*  <ListItem className={classes.inlineBlock}>
@@ -70,9 +75,7 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} сделано {" "}
-          {/* made with*/}
-          {/* <Favorite className={classes.icon} /> by{" "} */} 
+          &copy; {1900 + new Date().getYear()} <Translate value="madeIn" />{" "}
           <p
             className="russian navbar-brand-russian js-scroll-trigger"
             href="#p"
@@ -83,12 +86,11 @@ export default function Footer(props) {
               className={aClasses}
               target="_blank"
               id="p"
+              rel="noreferrer"
             >
               Дружининъ
             </a>{" "}
           </p>
-
-          {/* for a better web. */}
         </div>
       </div>
     </footer>
@@ -97,4 +99,8 @@ export default function Footer(props) {
 
 Footer.propTypes = {
   whiteFont: PropTypes.bool,
+  dir: PropTypes.string.isRequired,
 };
+
+const mapStateToProps = (state) => ({ dir: getDir(state) });
+export default connect(mapStateToProps)(Footer);
