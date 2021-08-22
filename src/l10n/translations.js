@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 const translations = {
   en: {
-    title: "Web3 development group",
+    title: "Research & Development",
     description:
       "Reliable partner for the development and support of Web3, crypto and blockchain projects. We audit and develop smart contracts. We create Dapp for any blockchain platforms.",
     specTitle: "Our specialization",
     specDesc: "The main focus of our work is blockchain development. We use a modern set of technologies to implement projects: Web3, Solidity, React, Python, Rust",
     specConsultTitle: "Consulting",
-    specConsultDesc: "Blockchain, cryptoeconomics, exchanges, smart contracts, marketing, dapp, stacking",
+    specConsultDesc: "Blockchain, cryptoeconomics, exchanges, smart contracts, marketing, dapp, staking",
     specAuditTitle: "Audit",
     specAuditDesc: "Conduct safety and efficiency studies of third-party smart contracts and Dapp.",
     specDevelopTitle: "Development",
@@ -19,9 +19,9 @@ const translations = {
     madeIn: "made",
   },
   ru: {
-    title: "Экосистема Web3 услуг",
+    title: "Разработка IT решений",
     description:
-      "Надежный партнер по разработке и сопровождению Web3\\крипто\\блокчейн проектов. Занимаемся аудитом и разработкой смарт-контрактов.",
+      "Надежный партнер по разработке и сопровождению web3\\крипто\\блокчейн проектов. Занимаемся аудитом и разработкой смарт-контрактов.",
     specTitle: "Наша специализация",
     specDesc: "Основной фокус нашей работы сосредоточен в блокчейн разработке. Для реализации проектов используем современный набор технологий: Web3, Solidity, React, Python, Rust",
     specConsultTitle: "Консультации",
