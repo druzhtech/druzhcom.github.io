@@ -85,10 +85,9 @@ function Footer(props) {
               href="http://druzh.com"
               className={aClasses}
               target="_blank"
-              id="p"
               rel="noreferrer"
             >
-              Дружининъ
+              @druzhcom web3 shield
             </a>{" "}
           </p>
         </div>
