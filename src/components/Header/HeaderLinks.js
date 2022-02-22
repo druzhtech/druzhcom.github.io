@@ -6,7 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 import Button from "components/CustomButtons/Button.js";
-import LanguageSwitcher from "./LanguageSwitcher";
+// import LanguageSwitcher from "./LanguageSwitcher";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
@@ -43,7 +43,7 @@ export default function HeaderLinks() {
         >
           <Button
             color="transparent"
-            href="https://t.me/druzhcom"
+            href="https://t.me/druzhcom_eng"
             target="_blank"
             className={classes.navLink}
           >
@@ -87,7 +87,7 @@ export default function HeaderLinks() {
         </Tooltip>
       </ListItem>
 
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Tooltip
           id="vk-tooltip"
           title=""
@@ -103,7 +103,7 @@ export default function HeaderLinks() {
             <i className={classes.socialIcons + " fab fa-vk"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
       {/* 
 
       <ListItem className={classes.listItem}>
@@ -193,7 +193,7 @@ export default function HeaderLinks() {
       </ListItem>
  */}
 
-      <LanguageSwitcher />
+      {/* <LanguageSwitcher /> */}
     </List>
   );
 }

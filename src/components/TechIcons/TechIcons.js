@@ -15,9 +15,13 @@ import SUBSTRATE from "assets/img/blockchains/substrate-1.png";
 import WASM from "assets/img/blockchains/webassembly-1.png";
 import RUST from "assets/img/blockchains/rust-1.png";
 import REACT from "assets/img/blockchains/react.png";
-import ELIXIR from "assets/img/blockchains/elixir.png";
+// import ELIXIR from "assets/img/blockchains/elixir.png";
 import BTC from "assets/img/blockchains/BTC.png";
 import BNB from "assets/img/blockchains/BNB.png";
+import SOLANA from "assets/img/blockchains/solana.png";
+import ELROND from "assets/img/blockchains/elrond-mod.png";
+import NEAR from "assets/img/blockchains/near.png";
+import DOT from "assets/img/blockchains/polkadot.png";
 
 const useStyles = makeStyles(styles);
 
@@ -167,7 +171,7 @@ export default function TechIcons() {
             className={classes.navLink}
           >
             <img
-              src={ELIXIR}
+              src={DOT}
               alt="..."
               className={classes.socialIcons}
               style={{
@@ -218,6 +222,74 @@ export default function TechIcons() {
           >
             <img
               src={BTC}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
+          </Button>
+        </Tooltip>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="rust"
+          title=""
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href=""
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <img
+              src={SOLANA}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="rust"
+          title=""
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href=""
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <img
+              src={ELROND}
+              alt="..."
+              className={classes.socialIcons}
+              style={{ width: "50px" }}
+            />
+          </Button>
+        </Tooltip>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="rust"
+          title=""
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href=""
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <img
+              src={NEAR}
               alt="..."
               className={classes.socialIcons}
               style={{ width: "50px" }}

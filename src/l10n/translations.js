@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 const translations = {
   en: {
-    title: "Research & Development",
+    title: "Research & Audit & Development",
     description:
-      "Reliable partner for the development and support of Web3, crypto and blockchain projects. We audit and develop smart contracts. We create Dapp for any blockchain platforms.",
+      "A trusted partner for web3 and blockchain project development and auditing. We research, audit and develop smart-contracts for any blockchain platform",
     specTitle: "Our specialization",
     specDesc: "The main focus of our work is blockchain development. We use a modern set of technologies to implement projects: Web3, Solidity, React, Python, Rust",
-    specConsultTitle: "Consulting",
-    specConsultDesc: "Blockchain, cryptoeconomics, exchanges, smart contracts, marketing, dapp, staking",
+    specConsultTitle: "Research",
+    specConsultDesc: "Blockchain, cryptoeconomics, DEX, smart contracts, marketing, Dapp, DAO",
     specAuditTitle: "Audit",
     specAuditDesc: "Conduct safety and efficiency studies of third-party smart contracts and Dapp.",
     specDevelopTitle: "Development",

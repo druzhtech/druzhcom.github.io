@@ -15,7 +15,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import TechIcons from "components/TechIcons/TechIcons.js";
 
 import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
+// import TeamSection from "./Sections/TeamSection.js";
 // import WorkSection from "./Sections/WorkSection.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
@@ -41,9 +41,9 @@ function LandingPage(props) {
           <p
             className="russian navbar-brand-russian js-scroll-trigger"
             href="#p"
-            id="p"
+            // id="p"
           >
-            дружининъ
+            @druzh.com
           </p>
         }
         rightLinks={<HeaderLinks />}
@@ -59,9 +59,9 @@ function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}>
+              <h3 className={classes.title}>
                 <Translate value="title" />
-              </h2>
+              </h3>
               <h4>
                 <Translate value="description" />
               </h4>
@@ -74,7 +74,7 @@ function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
+          {/* <TeamSection /> */}
           {/* <WorkSection /> */}
         </div>
       </div>

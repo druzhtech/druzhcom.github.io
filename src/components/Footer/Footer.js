@@ -35,15 +35,15 @@ function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="mailto:druzhcom@yandex.ru"
+                href="mailto:druzhcom@protonmail.com"
                 className={classes.block}
                 target="_blank"
                 rel="noreferrer"
               >
-                druzhcom@yandex.ru
+                druzhcom@protonmail.com
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            {/* <ListItem className={classes.inlineBlock}>
               <a
                 href="tel:+79252325524"
                 className={classes.block}
@@ -52,10 +52,10 @@ function Footer(props) {
               >
                 +7 925 232-55-24
               </a>
-            </ListItem>
+            </ListItem> */}
             <ListItem className={classes.inlineBlock}>
               <a
-                href="tg://resolve?domain=ilyadruzh"
+                href="tg://resolve?domain=didexBot"
                 className={classes.block}
                 target="_blank"
                 rel="noreferrer"
