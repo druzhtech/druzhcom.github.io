@@ -1,3 +1,3 @@
-# @druzhcom
+# Дружининъ
 
-Landing page for @druzhcom 
+Информация по проектам #Дружининъ
