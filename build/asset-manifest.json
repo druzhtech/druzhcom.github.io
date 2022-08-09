@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b34e5052.chunk.css",
+    "main.js": "/static/js/main.f9680e53.chunk.js",
+    "main.js.map": "/static/js/main.f9680e53.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f0b3abe2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f0b3abe2.js.map",
+    "static/js/2.a62ef8c5.chunk.js": "/static/js/2.a62ef8c5.chunk.js",
+    "static/js/2.a62ef8c5.chunk.js.map": "/static/js/2.a62ef8c5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b34e5052.chunk.css.map": "/static/css/main.b34e5052.chunk.css.map",
+    "static/js/2.a62ef8c5.chunk.js.LICENSE.txt": "/static/js/2.a62ef8c5.chunk.js.LICENSE.txt",
+    "static/media/BTC.eaadde7d.png": "/static/media/BTC.eaadde7d.png",
+    "static/media/bg7.32c7eec6.jpg": "/static/media/bg7.32c7eec6.jpg",
+    "static/media/elrond-mod.72f0d86c.png": "/static/media/elrond-mod.72f0d86c.png",
+    "static/media/landing-bg.jpg": "/static/media/landing-bg.64d7ac30.jpg",
+    "static/media/LandingPage.css": "/static/media/monomah1.ad67824e.ttf",
+    "static/media/near.f4f32e2b.png": "/static/media/near.f4f32e2b.png",
+    "static/media/polkadot.12b21cf6.png": "/static/media/polkadot.12b21cf6.png",
+    "static/media/profile-bg.jpg": "/static/media/profile-bg.8129069f.jpg",
+    "static/media/react.c2861c4d.png": "/static/media/react.c2861c4d.png",
+    "static/media/rust-1.b8c912bf.png": "/static/media/rust-1.b8c912bf.png",
+    "static/media/substrate-1.22740d62.png": "/static/media/substrate-1.22740d62.png",
+    "static/media/webassembly-1.f421b513.png": "/static/media/webassembly-1.f421b513.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0b3abe2.js",
+    "static/js/2.a62ef8c5.chunk.js",
+    "static/css/main.b34e5052.chunk.css",
+    "static/js/main.f9680e53.chunk.js"
+  ]
+}

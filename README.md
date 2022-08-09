@@ -1,3 +1,3 @@
-# Дружининъ
+# Description
 
-Информация по проектам #Дружининъ
+The official website of a smart contract audit and development company.
